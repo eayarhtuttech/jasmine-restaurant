@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+
+:root{
+    --color--primary:#e8d8ec;
+    --color--secondary:#9E4A3F;
+    --color--light:#FDFCFF;
+    --color--success:#616010;
+    --color--button:#9FB565;
+    --color--warning: #FAD238;
+
+    --border-radius: 30rem / 40rem;
+    --btn-padding: 0.6rem 2rem;
+    
+}
+
+.navbar-brand{
+    font-family:'Krona One', sans-serif;
+    font-weight: 300;
+}
+
+.navbar-nav a{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color--secondary);
+    background: var(--color--primary);
+    overflow-x:hidden;
+}
+.main-photo p{
+    background-color: var(--color--warning);
+    text-align: center;
+}
+.motto p{
+    text-align: center;
+    font-size: 3rem;
+    color:var(--color--success);
+}
+
+.wrap-photo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-photo img{
+    padding: 0 20px 20px;
+}
+
+/* @media(min-width: 800px){
+    .menu-photo img{
+        width: 50%;
+    }
+} */
+.menu-photo img:hover{
+    opacity: .5;
+    transition: all ease .9;
+}
+.menu-description{
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+
+section#menu-items{
+    padding:  7rem ;
+}
+
+section#about-us{
+     padding:  7rem;
+}
+
+section#contact-us{
+     padding: 7rem;
+}
+
+.location{
+    text-align: center;
+    padding-bottom: 0 0 2rem;
+}
+
+.contact-heading{
+    text-align: center;
+}
+
+.main-photo img {
+    width: 100%;
+    height: auto;
+}
+/* ---------FOOTER----------------------- */
+footer{
+    background: url(./images/subtle-pattern.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.footer-icons a{
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--color--success);
+}
+
+.footer-icons{
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.copyright p{
+    padding: 2rem;
+
+}
+
+/* ---------------CONTACT--------------------- */
+#contact-us{
+    background: url(./images/subtle-pattern.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-link a{
+     text-decoration: underline;
+}
+
+form button{
+    border-radius: var(--border-radius);
+    background-color:var(--color--button);
+    padding: var(--btn-padding);
+}
+
+form button:hover{
+    background-color: var(--color--success);
+    transition: all 1s ease;
+}
+    
+/* ---------------RESERVATION-------------- */
+#make-reserve{
+    text-align: center;
+    margin: 10rem;
+}
+
+.reserve-button a{
+    border-radius: var(--border-radius);
+    background-color:var(--color--button); 
+    text-decoration: none;
+}
+
+.reserve-button a{
+    padding: 1rem;
+    color: var(--color--light);
+}
+.reserve-button a:hover{
+    background-color: var(--color--success);
+    transition: all 1s ease;
+
+}
+
+.reserve-form {
+    position: absolute;
+    left: 15rem;
+    margin: 7rem ;
+    padding: 7rem;
+    border: 3px solid var(--color--success);
+}
+
+.reserve-form .form-input{
+    padding: 1rem;
+}
